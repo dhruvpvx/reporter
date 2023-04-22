@@ -15,7 +15,7 @@ class DailyReportGenerator {
         const isLast = index === messages.length - 1;
         const regex = /\(#\d+\)/g;
         const result = message.replace(regex, '');
-        toPrint += `- ${result}\n`;
+        toPrint += `• ${result}\n`;
         if (isLast) {
           toPrint += '\n';
         }
